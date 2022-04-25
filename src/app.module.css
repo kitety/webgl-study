@@ -1,0 +1,20 @@
+.link {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.full-screen {
+  display: block;
+  width: 100%;
+  height: calc(100vh - 48px);
+}
+.my_gui {
+  top: 50px;
+}
+.my_gui select option {
+  color: #000;
+}
+.my_gui select {
+  color: #000;
+}
