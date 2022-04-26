@@ -1,13 +1,25 @@
-import React from 'react';
 import {
-  BasicLayoutProps,
-  Settings as LayoutSettings,
+  BasicLayoutProps
 } from '@ant-design/pro-layout';
-import { RightContent } from '@ant-design/pro-layout/lib/components/TopNavHeader';
-import Footer from '@ant-design/pro-layout/lib/Footer';
-import './app.module.css';
 import { useMount } from 'ahooks';
 import Stats from 'three/examples/jsm/libs/stats.module.js';
+import './app.module.css';
+
+// declare global {
+//   interface Window {
+//     webglUtils: any
+//   }
+// }
+declare global {
+  interface Window {
+    webglUtils: {
+
+    };
+    webglLessonsUI: {
+
+    };
+  }
+}
 
 const Right2 = () => {
   useMount(() => {
@@ -33,7 +45,6 @@ export const layout = (): BasicLayoutProps => {
     logo: 'https://cdn.jsdelivr.net/gh/mrdoob/three.js@dev/files/icon.svg',
     siderWidth: 208,
     navTheme: 'light',
-
     contentStyle: {
       height: 'calc(100vh - 48px)',
     },
