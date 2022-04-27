@@ -18,6 +18,9 @@ declare global {
     webglLessonsUI: {
 
     };
+    m3: {
+
+    };
   }
 }
 
